@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Owner Payments Interactive Guide</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #eef3f7;
+      margin: 0;
+      padding: 20px;
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+      color: #1a5276;
+      margin-bottom: 30px;
+    }
+    details {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    summary {
+      background-color: #1f618d;
+      color: #fff;
+      padding: 16px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+    th {
+      background-color: #3498db;
+      color: #fff;
+      position: sticky;
+      top: 0;
+    }
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+    .sub-heading {
+      background-color: #d6eaf8;
+      font-weight: bold;
+      text-align: center;
+      font-size: 17px;
+      border: 2px solid #5dade2;
+      color: #154360;
+    }
+    td[colspan] ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    #searchBox {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏡 Owner Payments Interactive Guide</h1>
+  <input type="text" id="searchBox" placeholder="🔍 Search within table..." onkeyup="searchTable()" />
+
+  <details open>
+    <summary>💬 Introduction</summary>
+    <table>
+      <tr><td>This team handles all rent & security deposit transactions. Any queries = reach out to them!</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>👤 POC & Contact</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Contact Sudharshan via Fix Care</td><td>Support task gets assigned</td><td>Document concerns beforehand</td></tr>
+      <tr><td>2</td><td>Wait for TAT of 24 hrs</td><td>Receive a resolution update</td><td>Be specific in your query</td></tr>
+      <tr><td>3</td><td>Check OPs team response</td><td>Task is marked resolved</td><td>Only follow up if necessary</td></tr>
+      <tr><td>4</td><td>Raise new task if needed</td><td>Re-escalation continues</td><td>Reference previous task ID</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>📅 Weekly Payouts</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Process payments under weekly cycle (Mon/Thu)</td><td>Payment request gets scheduled</td><td>Plan ahead, avoid urgent payouts</td></tr>
+      <tr><td>2</td><td>Funds are released on Thursday</td><td>Transaction completes</td><td>Keep owner informed on process</td></tr>
+      <tr><td>3</td><td>Get OPs confirmation before committing</td><td>Confirmation helps prevent miscommunication</td><td>Never promise without OPs nod</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>❌ Payment Errors</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Identify error from OPs report</td><td>Pending payments listed</td><td>Verify data accuracy</td></tr>
+      <tr><td>2</td><td>Contact owner before they escalate</td><td>Proactive communication</td><td>Use professional language</td></tr>
+      <tr><td>3</td><td>Confirm bank details if needed</td><td>Account info is updated</td><td>Double-check with owner</td></tr>
+      <tr><td>4</td><td>Notify OPs for payment release</td><td>OPs confirms payout in cycle</td><td>Follow up after confirmation</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>💸 Less Rent Received</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Review dashboards thoroughly</td><td>Validate data accuracy</td><td>Check both owner & tenant sides</td></tr>
+      <tr><td>2</td><td>Consult SME before raising task</td><td>SME may resolve it directly</td><td>Don't rush to OPs</td></tr>
+      <tr><td>3</td><td>Raise task only if confident</td><td>Task is evaluated by OPs</td><td>Add supporting screenshots</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>📋 Rental Clarification</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>ZRM should analyze dashboards</td><td>Identify gaps or issues</td><td>Build rental data expertise</td></tr>
+      <tr><td>2</td><td>Use SME before OPs</td><td>SME adds clarity</td><td>Escalate only when needed</td></tr>
+      <tr><td>3</td><td>Raise OPs task if complex</td><td>Get deeper clarity</td><td>Ensure explanation is complete</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>📑 Transaction Details</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Use system records first</td><td>Transaction history visible</td><td>Explore dashboard thoroughly</td></tr>
+      <tr><td>2</td><td>Raise OPs task if very old</td><td>OPs retrieves archived data</td><td>Give clear UTR/date details</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>🔐 Security Deposit (SD) Queries</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Understand SD policy & type (IDR/NIDR)</td><td>Know eligibility criteria</td><td>Reference agreement terms</td></tr>
+      <tr><td>2</td><td>Check for tenant move-in trigger</td><td>Trigger auto SD in 7 days (NIDR)</td><td>Update Admin DB if needed</td></tr>
+      <tr><td>3</td><td>Raise task if error or delay</td><td>OPs investigates SD delay</td><td>Attach agreement copy</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>🎫 Raising Tickets</summary>
+    <table>
+      <tr><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <tr><td>1</td><td>Raise ticket (Handle Care) first</td><td>Task framework initiated</td><td>Link issue to correct ticket type</td></tr>
+      <tr><td>2</td><td>Add supporting documents</td><td>Task gets quick attention</td><td>Attach City head note, explanation, owner's OK</td></tr>
+    </table>
+  </details>
+
+  <script>
+    function searchTable() {
+      const input = document.getElementById("searchBox").value.toLowerCase();
+      const details = document.querySelectorAll("details");
+      details.forEach(detail => {
+        const content = detail.innerText.toLowerCase();
+        detail.open = input && content.includes(input);
+      });
+    }
+  </script>
+</body>
+</html>

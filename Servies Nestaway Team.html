@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Team Interactive Guide</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #0056b3;
+    }
+    #searchBox {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    details {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    summary {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+    }
+    summary:hover {
+      background-color: #0056b3;
+    }
+    .content {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f8f9fa;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .highlight {
+      background-color: #ffffcc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Services Team Interactive Guide</h1>
+  <input type="text" id="searchBox" placeholder="Search for topics or keywords..." onkeyup="searchContent()">
+
+  <details>
+    <summary>Introduction</summary>
+    <div class="content">
+      <p>The Services Team provides assistance during the move-in or move-out process to ensure the property is maintained during tenant transitions. They also support various tenant and owner requests for services like painting, repairs, electrical, or carpentry work.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Whom to Charge</summary>
+    <div class="content">
+      <p>Always remember, we manage properties but do not pay for expenses out of pocket. There is always a revenue source utilized to get any work done, ensuring the responsible party is charged appropriately.</p>
+      <p>The judgment for 'Whom to charge' depends on the Services Team under the supervision of the Business Heads. For example:</p>
+      <ul>
+        <li>If a tenant has damaged something, they should bear the charges.</li>
+        <li>For structural damages, the owner bears the charges.</li>
+        <li>In shared properties, if a common area asset is damaged (e.g., TV), the Services Team will determine if it was intentional or natural. Intentional damages are charged equally among current tenants.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Structural vs. Intentional Damage</summary>
+    <div class="content">
+      <p>It's crucial to distinguish between structural and intentional damage to determine the responsible party for charges. The Services Team assists in this identification:</p>
+      <ul>
+        <li>Natural structural damage due to building quality issues should be charged to the owner or handled by them.</li>
+        <li>Intentional damage, even if part of the property's structure, should be charged to the responsible individual.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Terms & Conditions on Painting & Other Services</summary>
+    <div class="content">
+      <p>Certain terms and conditions must be followed regarding painting and other charges to ensure no unwarranted claims from owners or tenants:</p>
+      <ul>
+        <li>Owners may expect Nestaway to paint their property in various cases, but this is only done when necessary and recoveries from past tenants are made.</li>
+        <li>If painting is required and approved by the Services Team, recoveries from past tenants should be identified, and City Head approval obtained before proceeding.</li>
+        <li>If an owner requests the recovered money from the tenant, politely inform them that it can only be utilized if the work is being conducted.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Medium of Communication & Points of Contact</summary>
+    <div class="content">
+      <p>The primary medium to connect with the Services Team is through email. Points of Contact (POCs) vary in each city, with the Service Manager heading the department for that particular city. For any service-related assistance, get in touch with the respective Service Manager.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Types of Recoveries Related to Services</summary>
+    <div class="content">
+      <p>When a tenant moves out, the Services Team conducts a thorough inspection to estimate the cost of restoring the property. Factors considered include:</p>
+      <ul>
+        <li>Unpaid electricity, maintenance, water, and gas bills.</li>
+        <li>Damages in the property.</li>
+        <li>Functionality of all appliances.</li>
+        <li>Cleanliness.</li>
+        <li>Verification of no theft in the property.</li>
+        <li>Confirmation that rents are paid.</li>
+      </ul>
+      <p>These recovery categories are added to the tenant's Dashboard and adjusted against the security deposit meant to be refunded. Entries include:</p>
+      <ul>
+        <li><strong>UTILITY MOVE OUT CHARGES:</strong> For any unpaid utility bills.</li>
+        <li><strong>MAINTENANCE MOVE OUT CHARGES:</strong> For damage repairs or cleaning charges.</li>
+        <li><strong>NOTICE PERIOD CHARGES:</strong> If the tenant hasn't served the 45-day notice period.</li>
+        <li><strong>MOVE OUT CHARGES TO NESTAWAY / OWNER:</strong> If the tenant breached the 6-month lock-in period.</li>
+      </ul>
+    </div>
+  </details>
+
+  <script>
+    function searchContent() {
+      const input = document.getElementById('searchBox').value.toLowerCase();
+      const details = document.querySelectorAll('details');
+
+      details.forEach(detail => {
+        const summary = detail.querySelector('summary').textContent.toLowerCase();
+        const content = detail
+::contentReference[oaicite:0]{index=0}
+ 

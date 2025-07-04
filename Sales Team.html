@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Team Roles & Responsibilities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    #searchBox {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    details {
+      background-color: #fff;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    summary {
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 5px 5px 0 0;
+    }
+    .content {
+      padding: 15px;
+      display: none;
+    }
+    details[open] .content {
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #007BFF;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sales Team Roles & Responsibilities</h1>
+  <input type="text" id="searchBox" placeholder="Search..." onkeyup="searchFunction()">
+
+  <details>
+    <summary>Introduction</summary>
+    <div class="content">
+      <p>The Sales Team is responsible for acquiring new property leads, connecting owners with the onboarding team, facilitating property showings to tenants, and managing day-to-day operations such as assisting tenants and coordinating owner inspections.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Onboarding Property</summary>
+    <div class="content">
+      <p>The Sales Team aims to onboard sufficient properties to maintain adequate inventory. This involves collaboration among House Acquisition Managers (HAMs), Area Partners, Zonal Managers (ZMs), and Area Property Managers (APMs) to ensure continuous property onboarding. Once a property is onboarded, the HAM explains Nestaway's terms to the owner, collects necessary documents, and uploads them with accurate details and photographs.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>SAV Related Disputes</summary>
+    <div class="content">
+      <p>Site Visit (SAV) details are recorded by APMs and reflected in the owner's dashboard. If discrepancies arise due to missing or incorrect comments, it's essential to coordinate with the APM to provide accurate information to the owner. Technical issues affecting SAV records should be addressed by raising tech tickets for resolution.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Day-to-Day Operations</summary>
+    <div class="content">
+      <p>The Sales Team's daily operations include:</p>
+      <ul>
+        <li>Following up with scheduled visits to prevent cancellations.</li>
+        <li>Attending to tenants during scheduled showings to facilitate rentals.</li>
+        <li>Explaining Nestaway's terms and conditions to tenants.</li>
+        <li>Assisting interested tenants in booking properties.</li>
+        <li>Supporting tenants to ensure a smooth stay experience.</li>
+      </ul>
+      <p>While the core goal is property onboarding and rentals, other teams like Customer Care and Services assist tenants during their stay.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Approvals on Specific Cases</summary>
+    <div class="content">
+      <p>The Sales Team may need owner approvals for specific tenant requests, such as:</p>
+      <ul>
+        <li>Decreasing the lock-in period.</li>
+        <li>Reducing the notice period.</li>
+        <li>Changing the Lease Start Date (LSD).</li>
+        <li>Providing additional appliances or installations.</li>
+      </ul>
+      <p>Effectively communicating these requests to owners and securing approvals can significantly impact successful bookings and contribute to career growth for Zone Relationship Managers (ZRMs).</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Vacant Bed Issues</summary>
+    <div class="content">
+      <p>Addressing vacant bed issues involves:</p>
+      <ul>
+        <li>Consulting with APMs to determine reasons for non-occupancy.</li>
+        <li>Informing owners of identified issues and seeking their support for solutions, such as adjusting rent, changing property type, or modifying furnishing status.</li>
+      </ul>
+    </div>
+  </details>
+
+  <script>
+    function searchFunction() {
+      const input = document.getElementById('searchBox').value.toLowerCase();
+      const details = document.querySelectorAll('details');
+      details.forEach(detail => {
+        const summary = detail.querySelector('summary').textContent.toLowerCase();
+        const content = detail.querySelector('.content').textContent.toLowerCase();
+        if (summary.includes(input) || content.includes(input)) {
+          detail.style.display = '';
+          detail.open = true;
+        } else {
+          detail.style.display = 'none';
+          detail.open = false;
+        }
+      });
+    }
+  </script>
+</body>
+</html>

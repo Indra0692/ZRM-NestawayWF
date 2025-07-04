@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contracts Management</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafd;
+      margin: 0;
+      padding: 20px;
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+      color: #1a5276;
+      margin-bottom: 30px;
+    }
+    details {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    summary {
+      background-color: #1f618d;
+      color: #fff;
+      padding: 18px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+    th {
+      background-color: #3498db;
+      color: #fff;
+      position: sticky;
+      top: 0;
+    }
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+    .sub-heading {
+      background-color: #d6eaf8;
+      font-weight: bold;
+      text-align: center;
+      font-size: 17px;
+      border: 2px solid #5dade2;
+      color: #154360;
+    }
+    td[colspan] ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    #searchBox {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .summary-chart {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 10px;
+    }
+    .summary-card {
+      background: linear-gradient(135deg, #d6eaf8, #aed6f1);
+      border-left: 5px solid #1a5276;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .summary-card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #154360;
+    }
+    .summary-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>📑 Contracts Management Guide</h1>
+  <input type="text" id="searchBox" placeholder="🔍 Search within sections..." onkeyup="searchTable()" />
+
+  <details open>
+    <summary>💬 Introduction</summary>
+    <table>
+      <tr><td>The central agreement team assists in creating agreements between Nestaway and property owners.</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>📧 Communication Channels & Points of Contact</summary>
+    <table>
+      <tr><td>Communication with this team is primarily through email. The point of contact is <a href="mailto:contracts.management@nestaway.com">contracts.management@nestaway.com</a>. Ensure City Head's approval is obtained before sending requests, where applicable.</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>📋 Details Required for Contract Preparation</summary>
+    <table>
+      <tr><td>Any contract-related change must have City Head's approval, except for rent changes on vacant properties, where the APM and ZM should be informed. Basic requirements for contract preparation include:</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>💰 Commission Calculation (Including/Excluding GST)</summary>
+    <table>
+      <tr><td>It's crucial to distinguish between commission amounts excluding and including GST. Nestaway charges owner commission inclusive of GST, calculated as: Commission + 18% of the commission. For example, if the commission is 10%, then 18% of 10 is 1.8, making the commission including GST 11.8% (10 + 1.8). Contracts describe commission excluding GST; ensure accurate calculations are communicated to owners.</td></tr>
+    </table>
+  </details>
+
+  <script>
+    function searchTable() {
+      const input = document.getElementById("searchBox").value.toLowerCase();
+      const details = document.querySelectorAll("details");
+      details.forEach(detail => {
+        const content = detail.innerText.toLowerCase();
+        detail.open = input && content.includes(input);
+      });
+    }
+  </script>
+</body>
+</html>
